@@ -23,7 +23,7 @@ TIGERBEETLE=123.123.123.1:3000,123.123.123.2:3000,123.123.123.3:3000 java -jar t
 docker run tigerbeetledemo 
 
 # remote cluster
-docker run -e TIGERBEETLE=123.123.123.1:3000,123.123.123.2:3000,123.123.123.3:3000 java -tigerbeetledemo 
+docker run -e TIGERBEETLE=123.123.123.1:3000,123.123.123.2:3000,123.123.123.3:3000 tigerbeetledemo 
 ```
 
-To create a public image in a repe update `pushImage.sh` as required.
+To create a public image in a docker repo, update `pushImage.sh` as required.
