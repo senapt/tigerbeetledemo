@@ -1,0 +1,11 @@
+.project
+.classpath
+.idea
+.cache
+.DS_Store
+.data
+*.im?
+target
+work
+*.tgz
+nohup.out
