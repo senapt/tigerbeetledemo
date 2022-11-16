@@ -35,11 +35,13 @@ public class Demo {
         accountBatch.setId(accountId.getLeastSignificantBits(), accountId.getMostSignificantBits());
         try {
             client.createAccounts(accountBatch);
-        } catch (RequestException e) {
+            client.close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println("Created new account with id: " + accountId.getLeastSignificantBits() +
                 "," + accountId.getMostSignificantBits());
+        System.exit(0);
     }
 
 
