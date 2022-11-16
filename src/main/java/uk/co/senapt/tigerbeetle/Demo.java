@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 public class Demo {
     public static void main(final String[] args) {
 
-        System.out.println("Running on " + System.getenv().get("os.name"));
+        System.out.println("Running on " + System.getProperty("os.name"));
         runCommand("uname");
         runCommand("uname -r");
 
